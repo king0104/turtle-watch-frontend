@@ -3,7 +3,7 @@ import TableOfContents from './TableOfContents';
 
 const Docs: React.FC = () => {
   const gradleCode = `dependencies {
-    implementation 'io.github.turtle-watch:turtle-watch:1.0.0'
+    implementation 'kr.co.icanhelpyou:turtlewatch:1.2.0'
 }`;
 
   const ymlCode = `turtle-watch:
@@ -102,6 +102,7 @@ const Docs: React.FC = () => {
               <div id="full-table-scan" className="bg-white rounded-lg shadow-sm p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">1. Full Table Scan (type: ALL)</h3>
                 <p className="text-gray-600 mb-4">전체 테이블 스캔은 테이블의 모든 행을 검색하므로 데이터가 많을수록 성능이 크게 저하됩니다.</p>
+                <img src="/assets/1_6.png" alt="Full Table Scan 예시" className="my-4 rounded shadow" />
                 <div className="bg-gray-50 rounded-lg p-4">
                   <h4 className="font-medium text-gray-900 mb-2">해결 방안:</h4>
                   <ul className="list-disc list-inside space-y-1">
@@ -176,7 +177,7 @@ const Docs: React.FC = () => {
               <div id="many-records-scanned" className="bg-white rounded-lg shadow-sm p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">6. 많은 레코드 스캔 & 낮은 필터링 비율</h3>
                 <p className="text-gray-600 mb-4">많은 레코드를 스캔하지만 실제로는 적은 수의 레코드만 반환될 때 발생합니다.</p>
-                <img src="/assets/6.png" alt="많은 레코드 스캔 예시" className="my-4 rounded shadow" />
+                <img src="/assets/1_6.png" alt="많은 레코드 스캔 예시" className="my-4 rounded shadow" />
                 <div className="bg-gray-50 rounded-lg p-4">
                   <h4 className="font-medium text-gray-900 mb-2">해결 방안:</h4>
                   <ul className="list-disc list-inside space-y-1">
